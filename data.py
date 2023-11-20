@@ -72,7 +72,7 @@ def update_plot(slider_year: int) -> py.iplot:
             },
         )
     )
-    fig.update_layout(title=dict(text="{year} Collection Distribution".format(year=slider_year), font=dict(size=12)))
+    fig.update_layout(title=dict(text="{year} Collection Distribution".format(year=slider_year), font=dict(size=12)), width=2000, height=2000)
     py.iplot(fig, filename='HISTORICAL COLLECTION RATES')
    
 
